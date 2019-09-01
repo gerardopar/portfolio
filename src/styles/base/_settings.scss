@@ -6,5 +6,10 @@
 }
 
 html{
-    font-family: sans-serif;
+    font-family: $main-font;
+    font-size: 16px;
+}
+
+body {
+    font-size: 1rem;
 }
