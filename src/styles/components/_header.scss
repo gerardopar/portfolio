@@ -1,8 +1,14 @@
 .header{
+    animation:  animate 1s linear;
+    -webkit-animation:  animate 1s linear;
     position: fixed;
+    transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
     width: 100%;
     z-index: 100;
-
     &__nav{
         background-color: rgba(38, 38, 255, 0.85);
         display: flex;
@@ -22,7 +28,7 @@
                 background-color: whitesmoke;
                 position: absolute;
                 left: 0;
-                height: 10%;
+                height: 2%;
                 bottom: 0;
                 width: 0%;
                 z-index: 2;
@@ -37,4 +43,10 @@
             }
         }
     }
+}
+
+// opacity animation
+@keyframes animate {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }

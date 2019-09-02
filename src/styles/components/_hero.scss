@@ -12,6 +12,8 @@
     }
 
     &__title{
+        animation:  animate 1s linear;
+        -webkit-animation:  animate 1s linear;
         color: #fff;
         font-size: 3.2rem;
         font-weight: 500;
@@ -20,6 +22,8 @@
     }
 
     &__text{
+        animation:  animate 1s linear;
+        -webkit-animation:  animate 1s linear;
         color: #fff;
         font-size: 1rem;
         font-weight: 100;
