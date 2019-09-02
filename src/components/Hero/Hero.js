@@ -16,6 +16,7 @@ const hero = props => (
     </div>
 );
 
+// proptypes & default props
 hero.propTypes = {
     id: PropTypes.string
 };

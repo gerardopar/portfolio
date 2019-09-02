@@ -1,0 +1,112 @@
+.projects {
+    @include applyFlex(center, center, column);
+    width: 100%;
+
+    // col containers
+    &__container--left{
+        @include applyFlex(center, space-around);
+        height: 50vh;
+        width: 85%;
+    }
+    &__container--right{
+        @include applyFlex(center, space-around);
+        height: 50vh;
+        width: 85%;
+    }
+
+    // text columns
+    &__col--text--wrap--left{
+        @include applyFlex(center, center, column);
+        background-color: rgb(243, 243, 243);
+        height: 100%;
+        text-align: left;
+        width: 75%;
+    }
+    &__col--text--wrap--right{
+        @include applyFlex(center, center, column);
+        background-color: rgb(243, 243, 243);
+        height: 100%;
+        text-align: left;
+        width: 75%;
+    }
+
+    // column text
+    &__col--title{
+        color: $blue;
+        font-size: 1.2rem;
+        letter-spacing: 5px;
+    }
+    &__col--text{
+        color: $off-black;
+        font-size: .85rem;
+        font-weight: 500;
+        line-height: 2;
+    }
+    &__col--icon--wrap{
+        width: 50%;
+        text-align: left;
+    }
+    &__col--icon{
+        height: 25px;
+        margin-right: 10px;
+        transition: all .5s ease-out;
+        -webkit-transition: all .5s ease-out;
+        -moz-transition: all .5s ease-out;
+        -ms-transition: all .5s ease-out;
+        -o-transition: all .5s ease-out;
+        width: 25px;
+        &:hover{
+            transform: scale(1.2);
+            -webkit-transform: scale(1.2);
+            -moz-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+            -o-transform: scale(1.2);
+        }
+    }
+
+    // image column
+    &__col--img--wrap{
+        height: 100%;
+        position: relative;
+        text-align: left;
+        width: 50%;
+    }
+    &__col--img--left{
+        height: 300px;
+        right: 10%;
+        position: absolute;
+        top: 10%;
+        transition: all .5s ease-out;
+        -webkit-transition: all .5s ease-out;
+        -moz-transition: all .5s ease-out;
+        -ms-transition: all .5s ease-out;
+        -o-transition: all .5s ease-out;
+        width: 500px;
+        &:hover{
+            transform: scale(1.01);
+            -webkit-transform: scale(1.01);
+            -moz-transform: scale(1.01);
+            -ms-transform: scale(1.01);
+            -o-transform: scale(1.01);
+        }
+    }
+    &__col--img--right{
+        height: 300px;
+        left: 10%;
+        position: absolute;
+        top: 10%;
+        transition: all .5s ease-out;
+        -webkit-transition: all .5s ease-out;
+        -moz-transition: all .5s ease-out;
+        -ms-transition: all .5s ease-out;
+        -o-transition: all .5s ease-out;
+        width: 500px;
+        &:hover{
+            transform: scale(1.01);
+            -webkit-transform: scale(1.01);
+            -moz-transform: scale(1.01);
+            -ms-transform: scale(1.01);
+            -o-transform: scale(1.01);
+        }
+    }
+}

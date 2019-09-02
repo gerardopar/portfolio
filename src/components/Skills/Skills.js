@@ -21,6 +21,7 @@ const skills = props => (
     </div>
 );
 
+// proptypes & default props
 skills.propTypes = {
     id: PropTypes.string
 };
