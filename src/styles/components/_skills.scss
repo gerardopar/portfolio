@@ -1,0 +1,18 @@
+.skills{
+    @include applyFlex(center, center, column);
+    background-color: $off-white;
+    width: 100%;
+
+    &__col{
+        @include applyFlex(center, space-between);
+        flex-wrap: wrap;
+        padding-bottom: 35px;
+        padding-top: 35px;
+        width: 90%;
+    }
+
+    &__icon{
+        font-size: 6rem;
+        padding: 12px 16px;
+    }
+}
