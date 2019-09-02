@@ -1,0 +1,37 @@
+.header {
+    position: fixed;
+    width: 100%;
+
+    &__nav{
+        background-color: rgba(38, 38, 255, 0.85);
+        display: flex;
+        padding: 12px 16px !important;
+        width: 100%;
+
+        &--link{
+            color: whitesmoke;
+            letter-spacing: 2px;
+            margin-right: 25px;
+            padding: 8px 10px;
+            position: relative;
+            &::after{
+                content: '';
+                background-color: whitesmoke;
+                position: absolute;
+                left: 0;
+                height: 10%;
+                bottom: 0;
+                width: 0%;
+                z-index: 2;
+                transition: all .5s ease-out;
+                -webkit-transition: all .5s ease-out;
+                -moz-transition: all .5s ease-out;
+                -ms-transition: all .5s ease-out;
+                -o-transition: all .5s ease-out;
+            }           
+            &:hover::after{
+                width: 100%;
+            }
+        }
+    }
+}
