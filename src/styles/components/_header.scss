@@ -1,6 +1,7 @@
-.header {
+.header{
     position: fixed;
     width: 100%;
+    z-index: 100;
 
     &__nav{
         background-color: rgba(38, 38, 255, 0.85);
@@ -11,9 +12,11 @@
         &--link{
             color: whitesmoke;
             letter-spacing: 2px;
+            font-weight: 500;
             margin-right: 25px;
             padding: 8px 10px;
             position: relative;
+
             &::after{
                 content: '';
                 background-color: whitesmoke;

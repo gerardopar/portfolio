@@ -1,0 +1,44 @@
+.hero{
+    @include applyFlex(center, center);
+    background-color: #2c2c2c;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+
+    &__container{
+        @include applyFlex(center, center, column);
+        text-align: center;
+        width: 80%;
+    }
+
+    &__title{
+        color: #fff;
+        font-size: 3.2rem;
+        font-weight: 500;
+        letter-spacing: 25px;
+        z-index: 5;
+    }
+
+    &__text{
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 100;
+        letter-spacing: 25px;
+        z-index: 5;
+    }
+
+    &__wave--top{
+        height: 400px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 600px;
+    }
+    &__wave--bottom{
+        bottom: 0;
+        height: 400px;
+        position: absolute;
+        right: 0;
+        width: 600px;
+    }
+}
