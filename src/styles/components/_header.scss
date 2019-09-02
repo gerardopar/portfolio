@@ -10,7 +10,7 @@
     width: 100%;
     z-index: 100;
     &__nav{
-        background-color: rgba(38, 38, 255, 0.85);
+        background-color: $trans-blue;
         display: flex;
         padding: 12px 16px !important;
         width: 100%;
@@ -25,7 +25,7 @@
 
             &::after{
                 content: '';
-                background-color: whitesmoke;
+                background-color: $off-white;
                 position: absolute;
                 left: 0;
                 height: 2%;
