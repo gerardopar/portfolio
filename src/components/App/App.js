@@ -8,6 +8,7 @@ import Skills from '../Skills/Skills';
 import About from '../About/About';
 import Projects from '../Projects/Projects';
 import Contact from '../Contact/Contact';
+import Footer from '../Footer/Footer';
 
 const App = () => (
     <div>
@@ -21,6 +22,7 @@ const App = () => (
         <Projects id="projects" />
         <Heading text="CONTACT" />
         <Contact />
+        <Footer />
     </div>
 );
 
