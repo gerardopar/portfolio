@@ -56,15 +56,84 @@
 }
 
 @media (max-width: 374.98px) and (orientation: portrait) {
+    .hero{
+        &__container{
+            padding-left: 20px;
+        }
+        &__title{
+            font-size: 1.2rem;
+        }
+        &__text{
+            font-size: .75rem;
+        }
 
+        &__wave--top{
+            height: 300px;
+            left: -30%;
+            position: absolute;
+            top: 0;
+            width: 500px;
+            z-index: 1;
+        }
+        &__wave--bottom{
+            bottom: 0;
+            height: 300px;
+            position: absolute;
+            right: -30%;
+            width: 500px;
+            z-index: 1;
+        }
+    }
 }
 
 @media (min-width: 375px) and (max-width: 413.98px) and (orientation: portrait) {
+    .hero{
+        &__title{
+            font-size: 1.6rem;
+        }
 
+        &__wave--top{
+            height: 300px;
+            left: -30%;
+            position: absolute;
+            top: 0;
+            width: 500px;
+            z-index: 1;
+        }
+        &__wave--bottom{
+            bottom: 0;
+            height: 300px;
+            position: absolute;
+            right: -30%;
+            width: 500px;
+            z-index: 1;
+        }
+    }
 }
 
 @media (min-width: 414px) and (max-width: 575.98px) and (orientation: portrait) {
+    .hero{
+        &__title{
+            font-size: 1.6rem;
+        }
 
+        &__wave--top{
+            height: 300px;
+            left: -10%;
+            position: absolute;
+            top: 0;
+            width: 500px;
+            z-index: 1;
+        }
+        &__wave--bottom{
+            bottom: 0;
+            height: 300px;
+            position: absolute;
+            right: -10%;
+            width: 500px;
+            z-index: 1;
+        }
+    }
 }
 
 @media (max-width: 575.98px) and (orientation: landscape){
@@ -74,8 +143,6 @@
         }
 
         &__wave--top{
-            animation:  animate 1s linear;
-            -webkit-animation:  animate 1s linear;
             height: 300px;
             left: 0;
             position: absolute;
@@ -84,8 +151,6 @@
             z-index: 1;
         }
         &__wave--bottom{
-            animation: animate 1s linear;
-            -webkit-animation: animate 1s linear;
             bottom: 0;
             height: 300px;
             position: absolute;
@@ -103,8 +168,6 @@
         }
 
         &__wave--top{
-            animation:  animate 1s linear;
-            -webkit-animation:  animate 1s linear;
             height: 200px;
             left: -10%;
             position: absolute;
@@ -113,8 +176,6 @@
             z-index: 1;
         }
         &__wave--bottom{
-            animation: animate 1s linear;
-            -webkit-animation: animate 1s linear;
             bottom: 0;
             height: 200px;
             position: absolute;
@@ -132,8 +193,6 @@
         }
 
         &__wave--top{
-            animation:  animate 1s linear;
-            -webkit-animation:  animate 1s linear;
             height: 300px;
             left: 0;
             position: absolute;
@@ -142,8 +201,6 @@
             z-index: 1;
         }
         &__wave--bottom{
-            animation: animate 1s linear;
-            -webkit-animation: animate 1s linear;
             bottom: 0;
             height: 300px;
             position: absolute;

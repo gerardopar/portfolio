@@ -65,15 +65,78 @@
 }
 
 @media (max-width: 374.98px) and (orientation: portrait) {
-
+    .about{
+        overflow: hidden;
+        &__container{
+            left: 80%;
+            top: 30%;
+            transform: translate(-70%, -30%);
+            width: 55%;
+        }
+        &__title{
+            font-size: 2rem;
+        }
+        &__text{
+            font-size: .85rem;
+        }
+        &__img{
+            height: 100%;
+            position: absolute;
+            left: -15%;
+            bottom: 0;
+            width: 450px;
+        }
+    }
 }
 
 @media (min-width: 375px) and (max-width: 413.98px) and (orientation: portrait) {
-
+    .about{
+        overflow: hidden;
+        &__container{
+            left: 80%;
+            top: 30%;
+            transform: translate(-70%, -30%);
+            width: 55%;
+        }
+        &__title{
+            font-size: 2rem;
+        }
+        &__text{
+            font-size: .85rem;
+        }
+        &__img{
+            height: 100%;
+            position: absolute;
+            left: -15%;
+            bottom: 0;
+            width: 450px;
+        }
+    }
 }
 
 @media (min-width: 414px) and (max-width: 575.98px) and (orientation: portrait) {
-
+    .about{
+        overflow: hidden;
+        &__container{
+            left: 80%;
+            top: 30%;
+            transform: translate(-70%, -30%);
+            width: 55%;
+        }
+        &__title{
+            font-size: 2rem;
+        }
+        &__text{
+            font-size: .85rem;
+        }
+        &__img{
+            height: 100%;
+            position: absolute;
+            left: -15%;
+            bottom: 0;
+            width: 450px;
+        }
+    }
 }
 
 @media (max-width: 575.98px) and (orientation: landscape){

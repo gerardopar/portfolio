@@ -18,15 +18,48 @@
 }
 
 @media (max-width: 374.98px) and (orientation: portrait) {
-
+    .skills{
+        &__col{
+            @include applyFlex(center, center);
+            padding-bottom: 5px;
+            width: 100%;
+        }
+        
+        &__icon{
+            font-size: 4rem;
+            padding: 12px 16px;
+        }
+    }
 }
 
 @media (min-width: 375px) and (max-width: 413.98px) and (orientation: portrait) {
-
+    .skills{
+        &__col{
+            @include applyFlex(center, center);
+            padding-bottom: 5px;
+            width: 100%;
+        }
+        
+        &__icon{
+            font-size: 4rem;
+            padding: 12px 16px;
+        }
+    }
 }
 
 @media (min-width: 414px) and (max-width: 575.98px) and (orientation: portrait) {
-
+    .skills{
+        &__col{
+            @include applyFlex(center, center);
+            padding-bottom: 5px;
+            width: 100%;
+        }
+        
+        &__icon{
+            font-size: 4rem;
+            padding: 12px 16px;
+        }
+    }
 }
 
 @media (max-width: 575.98px) and (orientation: landscape){

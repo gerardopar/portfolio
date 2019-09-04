@@ -120,16 +120,176 @@
     }
 }
 
-@media (max-width: 374.98px) and (orientation: portrait) {
+@media (max-width: 320.98px) and (orientation: portrait) {
+    .projects{
+        &__container--left{
+            @include applyFlex(center, space-around, column);
+            width: 100%;
+            position: relative;
+        }
+        &__container--right{
+            @include applyFlex(center, space-around, column-reverse);
+            position: relative;
+            width: 100%;
+        }
 
+        //text col
+        &__col--text--wrap--left,
+        &__col--text--wrap--right{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            width: 100%;
+        }
+
+        // image col
+        &__col--img--wrap{
+        padding-top: 200px;
+        padding-bottom: 100px;
+        width: 100%;
+        }
+        &__col--img--left,
+        &__col--img--right{
+            height: 230px;
+            width: 312px;
+        }
+        &__col--img--left{
+            right: 1%;
+            top: -5%;
+        }
+        &__col--img--right{
+            left: 1%;
+            top: -5%;
+        }
+    }
+}
+
+@media (min-width: 321px) and (max-width: 374.98px) and (orientation: portrait) {
+    .projects{
+        &__container--left{
+            @include applyFlex(center, space-around, column);
+            width: 100%;
+            position: relative;
+        }
+        &__container--right{
+            @include applyFlex(center, space-around, column-reverse);
+            position: relative;
+            width: 100%;
+        }
+
+        //text col
+        &__col--text--wrap--left,
+        &__col--text--wrap--right{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            width: 100%;
+        }
+
+        // image col
+        &__col--img--wrap{
+        padding-top: 200px;
+        padding-bottom: 100px;
+        width: 100%;
+        }
+        &__col--img--left,
+        &__col--img--right{
+            height: 250px;
+            width: 340px;
+        }
+        &__col--img--left{
+            right: 3%;
+            top: -5%;
+        }
+        &__col--img--right{
+            left: 3%;
+            top: -5%;
+        }
+    }
 }
 
 @media (min-width: 375px) and (max-width: 413.98px) and (orientation: portrait) {
+    .projects{
+        &__container--left{
+            @include applyFlex(center, space-around, column);
+            width: 100%;
+            position: relative;
+        }
+        &__container--right{
+            @include applyFlex(center, space-around, column-reverse);
+            position: relative;
+            width: 100%;
+        }
 
+        //text col
+        &__col--text--wrap--left,
+        &__col--text--wrap--right{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            width: 100%;
+        }
+
+        // image col
+        &__col--img--wrap{
+        padding-top: 200px;
+        padding-bottom: 100px;
+        width: 100%;
+        }
+        &__col--img--left,
+        &__col--img--right{
+            height: 267px;
+            width: 340px;
+        }
+        &__col--img--left{
+            right: 5%;
+            top: -5%;
+        }
+        &__col--img--right{
+            left: 5%;
+            top: -5%;
+        }
+    }
 }
 
 @media (min-width: 414px) and (max-width: 575.98px) and (orientation: portrait) {
+    .projects{
+        &__container--left{
+            @include applyFlex(center, space-around, column);
+            width: 100%;
+            position: relative;
+        }
+        &__container--right{
+            @include applyFlex(center, space-around, column-reverse);
+            position: relative;
+            width: 100%;
+        }
 
+        //text col
+        &__col--text--wrap--left,
+        &__col--text--wrap--right{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            width: 100%;
+        }
+
+        // image col
+        &__col--img--wrap{
+        padding-top: 200px;
+        padding-bottom: 100px;
+        width: 100%;
+        }
+        &__col--img--left,
+        &__col--img--right{
+            height: 275px;
+            width: 400px;
+        }
+        &__col--img--left{
+            right: 2%;
+            top: -5%;
+        }
+        &__col--img--right{
+            left: 2%;
+            top: -5%;
+        }
+    }
 }
 
 @media (max-width: 575.98px) and (orientation: landscape){
