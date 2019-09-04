@@ -166,6 +166,9 @@
         &__title{
             font-size: 1.6rem;
         }
+        &__text{
+            font-size: .75rem;
+        }
 
         &__wave--top{
             height: 200px;
@@ -209,12 +212,4 @@
             z-index: 1;
         }
     }
-}
-
-@media (min-width: 992px) and (max-width: 1199.98px) {
-
-}
-
-@media (min-width: 1200px) {
-
 }

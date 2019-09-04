@@ -64,17 +64,22 @@
     }
 }
 
-@media (max-width: 374.98px) and (orientation: portrait) {
+@media (max-width: 320.98px) and (orientation: portrait) {
     .about{
         overflow: hidden;
         &__container{
+            padding: 24px;
             left: 80%;
             top: 30%;
             transform: translate(-70%, -30%);
-            width: 55%;
+            width: 60%;
         }
         &__title{
-            font-size: 2rem;
+            font-size: 1.4rem;
+
+            &--small{
+                font-size: .85rem;
+            }
         }
         &__text{
             font-size: .85rem;
@@ -82,7 +87,37 @@
         &__img{
             height: 100%;
             position: absolute;
-            left: -15%;
+            left: -55%;
+            bottom: 0;
+            width: 450px;
+        }
+    }
+}
+
+@media (min-width: 321px) and (max-width: 374.98px) and (orientation: portrait) {
+    .about{
+        overflow: hidden;
+        &__container{
+            padding: 24px;
+            left: 80%;
+            top: 30%;
+            transform: translate(-70%, -30%);
+            width: 60%;
+        }
+        &__title{
+            font-size: 1.6rem;
+
+            &--small{
+                font-size: .85rem;
+            }
+        }
+        &__text{
+            font-size: .85rem;
+        }
+        &__img{
+            height: 100%;
+            position: absolute;
+            left: -50%;
             bottom: 0;
             width: 450px;
         }
@@ -93,13 +128,18 @@
     .about{
         overflow: hidden;
         &__container{
+            padding: 24px;
             left: 80%;
             top: 30%;
             transform: translate(-70%, -30%);
-            width: 55%;
+            width: 60%;
         }
         &__title{
-            font-size: 2rem;
+            font-size: 1.6rem;
+
+            &--small{
+                font-size: .85rem;
+            }
         }
         &__text{
             font-size: .85rem;
@@ -107,7 +147,7 @@
         &__img{
             height: 100%;
             position: absolute;
-            left: -15%;
+            left: -45%;
             bottom: 0;
             width: 450px;
         }
@@ -124,7 +164,11 @@
             width: 55%;
         }
         &__title{
-            font-size: 2rem;
+            font-size: 1.6rem;
+
+            &--small{
+                font-size: .85rem;
+            }
         }
         &__text{
             font-size: .85rem;
@@ -132,7 +176,7 @@
         &__img{
             height: 100%;
             position: absolute;
-            left: -15%;
+            left: -35%;
             bottom: 0;
             width: 450px;
         }
@@ -178,12 +222,4 @@
             font-size: 3rem;
         }
     }
-}
-
-@media (min-width: 992px) and (max-width: 1199.98px) {
-
-}
-
-@media (min-width: 1200px) {
-
 }

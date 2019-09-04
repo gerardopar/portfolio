@@ -93,3 +93,13 @@
         }
     }
 }
+
+@media (max-width: 320.98px) and (orientation: portrait) {
+    .contact{
+        &__title,
+        &__text,
+        &__email{
+            font-size: 1rem;
+        }
+    }
+}
