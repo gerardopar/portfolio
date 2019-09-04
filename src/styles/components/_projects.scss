@@ -5,13 +5,13 @@
     // col containers
     &__container--left{
         @include applyFlex(center, space-around);
-        height: 50vh;
+        // height: 50vh;
         width: 85%;
         position: relative;
     }
     &__container--right{
         @include applyFlex(center, space-around);
-        height: 50vh;
+        // height: 50vh;
         position: relative;
         width: 85%;
     }
@@ -20,14 +20,18 @@
     &__col--text--wrap--left{
         @include applyFlex(center, center, column);
         background-color: rgb(243, 243, 243);
-        height: 100%;
+        // height: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
         text-align: left;
         width: 75%;
     }
     &__col--text--wrap--right{
         @include applyFlex(center, center, column);
         background-color: rgb(243, 243, 243);
-        height: 100%;
+        // height: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
         text-align: left;
         width: 75%;
     }
@@ -68,7 +72,9 @@
 
     // image column
     &__col--img--wrap{
-        height: 100%;
+        // height: 100%;
+        padding-top: 100px;
+        padding-bottom: 100px;
         position: relative;
         text-align: left;
         width: 50%;
@@ -78,7 +84,7 @@
         height: 300px;
         right: 10%;
         position: absolute;
-        top: 10%;
+        top: -25%;
         transition: all .5s ease-out;
         -webkit-transition: all .5s ease-out;
         -moz-transition: all .5s ease-out;
@@ -97,7 +103,7 @@
         height: 300px;
         left: 10%;
         position: absolute;
-        top: 10%;
+        top: -25%;
         transition: all .5s ease-out;
         -webkit-transition: all .5s ease-out;
         -moz-transition: all .5s ease-out;
@@ -112,4 +118,139 @@
             -o-transform: scale(1.01);
         }
     }
+}
+
+@media (max-width: 374.98px) and (orientation: portrait) {
+
+}
+
+@media (min-width: 375px) and (max-width: 413.98px) and (orientation: portrait) {
+
+}
+
+@media (min-width: 414px) and (max-width: 575.98px) and (orientation: portrait) {
+
+}
+
+@media (max-width: 575.98px) and (orientation: landscape){
+    .projects{
+        &__container--left{
+            @include applyFlex(center, space-around, column);
+            width: 100%;
+            position: relative;
+        }
+        &__container--right{
+            @include applyFlex(center, space-around, column-reverse);
+            position: relative;
+            width: 100%;
+        }
+
+        //text col
+        &__col--text--wrap--left,
+        &__col--text--wrap--right{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            width: 100%;
+        }
+
+        // image col
+        &__col--img--wrap{
+        padding-top: 200px;
+        padding-bottom: 100px;
+        width: 100%;
+        }
+        &__col--img--left,
+        &__col--img--right{
+            height: 250px;
+            width: 450px;
+        }
+        &__col--img--left{
+            right: 10%;
+            top: -5%;
+        }
+        &__col--img--right{
+            left: 10%;
+            top: -5%;
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .projects{
+        &__container--left{
+            @include applyFlex(center, space-around, column);
+            width: 100%;
+            position: relative;
+        }
+        &__container--right{
+            @include applyFlex(center, space-around, column-reverse);
+            position: relative;
+            width: 100%;
+        }
+
+        //text col
+        &__col--text--wrap--left,
+        &__col--text--wrap--right{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            width: 100%;
+        }
+
+        // image col
+        &__col--img--wrap{
+        padding-top: 200px;
+        padding-bottom: 100px;
+        width: 100%;
+        }
+        &__col--img--left,
+        &__col--img--right{
+            height: 250px;
+            width: 450px;
+        }
+        &__col--img--left{
+            right: 15%;
+            top: -5%;
+        }
+        &__col--img--right{
+            left: 15%;
+            top: -5%;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .projects{
+        &__col--img--left,
+        &__col--img--right{
+            height: 200px;
+            width: 350px;
+        }
+        &__col--img--left{
+            right: -15%;
+            top: 0;
+        }
+        &__col--img--right{
+            left: -15%;
+            top: 0;
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .projects{
+        &__col--img--left,
+        &__col--img--right{
+            width: 450px;
+        }
+        &__col--img--left{
+            right: -5%;
+        }
+        &__col--img--right{
+            left: -5%;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+
 }

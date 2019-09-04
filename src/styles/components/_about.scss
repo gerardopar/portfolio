@@ -1,7 +1,9 @@
 .about{
     background-color: $gray;
+    padding-bottom: 400px;
+    padding-top: 200px;
     position: relative;
-    height: 75vh;
+    
 
     &__container{
         background-color: $trans-blue;
@@ -23,6 +25,7 @@
         height: 100%;
         position: absolute;
         left: 0;
+        bottom: 0;
         width: 450px;
     }
 
@@ -59,4 +62,65 @@
         line-height: 1.8;
         margin-top: 20px;
     }
+}
+
+@media (max-width: 374.98px) and (orientation: portrait) {
+
+}
+
+@media (min-width: 375px) and (max-width: 413.98px) and (orientation: portrait) {
+
+}
+
+@media (min-width: 414px) and (max-width: 575.98px) and (orientation: portrait) {
+
+}
+
+@media (max-width: 575.98px) and (orientation: landscape){
+    .about{
+        overflow: hidden;
+        &__container{
+            left: 80%;
+            top: 30%;
+            transform: translate(-70%, -30%);
+            width: 45%;
+        }
+        &__title{
+            font-size: 2rem;
+        }
+        &__text{
+            font-size: .85rem;
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .about{
+        overflow: hidden;
+        &__container{
+            left: 80%;
+            top: 30%;
+            transform: translate(-70%, -30%);
+            width: 50%;
+        }
+        &__title{
+            font-size: 2.6rem;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .about{
+        &__title{
+            font-size: 3rem;
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+@media (min-width: 1200px) {
+
 }
