@@ -1,5 +1,6 @@
 // importing modules
 import React from 'react';
+import PropTypes from 'prop-types';
 
 // importing assets
 import codeIcon from '../../assets/img/code.svg';
@@ -7,8 +8,8 @@ import gitIcon from '../../assets/img/github.svg';
 import emailIcon from '../../assets/img/email_icon.svg';
 import linkedin from '../../assets/img/linkedin-.svg';
 
-const contact = () => (
-    <div className="contact">
+const contact = props => (
+    <div className="contact" id={props.id}>
         <div className="contact__container">
             <h2 className="contact__title">FRONT END DEVELOPER</h2>
             <img src={codeIcon} alt="code icon" className="contact__img" />
@@ -28,5 +29,14 @@ const contact = () => (
         </div>
     </div>
 );
+
+
+contact.propTypes = {
+    id: PropTypes.string
+};
+
+contact.defaultProps = {
+    id: 'contact'
+};
 
 export default contact;

@@ -1,5 +1,6 @@
 // importing modules
 import React from 'react';
+import PropTypes from 'prop-types';
 // importing components
 import ProjectL from './project/ProjectL';
 import ProjectR from './project/ProjectR';
@@ -12,8 +13,8 @@ import filmania from '../../assets/img/filmania.png';
 import digiNews from '../../assets/img/diginews.png';
 import pixture from '../../assets/img/pixture-min.png';
 
-const projects = () => (
-    <div className="projects" id="projects">
+const projects = props => (
+    <div className="projects" id={props.id}>
         <ProjectL site="http://cloakdm.s3-website-us-west-1.amazonaws.com/" img={cloakdm} title="cloakdm">
             <h2 className="projects__col--title">&mdash; 01 CLOAKDM</h2>
             <p className="projects__col--text">
@@ -115,6 +116,14 @@ const projects = () => (
         </ProjectL>
     </div>
 );
+
+projects.propTypes = {
+    id: PropTypes.string
+};
+
+projects.defaultProps = {
+    id: 'projects'
+};
 
 export default projects;
 
