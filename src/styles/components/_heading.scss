@@ -3,6 +3,7 @@
     background-color: $off-black;
     text-align: center;
     width: 100%;
+    z-index: 99;
 
     &__text{
         color: $off-white;

@@ -2,13 +2,14 @@
     @include applyFlex(center, center);
     background-color: $gray;
     height: 100vh;
+    overflow: hidden;
     position: relative;
     width: 100%;
 
     &__container{
         @include applyFlex(center, center, column);
         text-align: center;
-        width: 80%;
+        width: 100%;
         z-index: 5;
     }
 
@@ -40,7 +41,7 @@
         position: absolute;
         top: 0;
         width: 600px;
-        z-index: 2;
+        z-index: 1;
     }
     &__wave--bottom{
         animation:  animate 1s linear;
@@ -50,6 +51,113 @@
         position: absolute;
         right: 0;
         width: 600px;
-        z-index: 2;
+        z-index: 1;
     }
+}
+
+@media (max-width: 374.98px) and (orientation: portrait) {
+
+}
+
+@media (min-width: 375px) and (max-width: 413.98px) and (orientation: portrait) {
+
+}
+
+@media (min-width: 414px) and (max-width: 575.98px) and (orientation: portrait) {
+
+}
+
+@media (max-width: 575.98px) and (orientation: landscape){
+    .hero{
+        &__title{
+            font-size: 1.6rem;
+        }
+
+        &__wave--top{
+            animation:  animate 1s linear;
+            -webkit-animation:  animate 1s linear;
+            height: 300px;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 500px;
+            z-index: 1;
+        }
+        &__wave--bottom{
+            animation: animate 1s linear;
+            -webkit-animation: animate 1s linear;
+            bottom: 0;
+            height: 300px;
+            position: absolute;
+            right: 0;
+            width: 500px;
+            z-index: 1;
+        }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .hero{
+        &__title{
+            font-size: 1.6rem;
+        }
+
+        &__wave--top{
+            animation:  animate 1s linear;
+            -webkit-animation:  animate 1s linear;
+            height: 200px;
+            left: -10%;
+            position: absolute;
+            top: 5%;
+            width: 400px;
+            z-index: 1;
+        }
+        &__wave--bottom{
+            animation: animate 1s linear;
+            -webkit-animation: animate 1s linear;
+            bottom: 0;
+            height: 200px;
+            position: absolute;
+            right: -10%;
+            width: 400px;
+            z-index: 1;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .hero{
+        &__title{
+            font-size: 2rem;
+        }
+
+        &__wave--top{
+            animation:  animate 1s linear;
+            -webkit-animation:  animate 1s linear;
+            height: 300px;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 500px;
+            z-index: 1;
+        }
+        &__wave--bottom{
+            animation: animate 1s linear;
+            -webkit-animation: animate 1s linear;
+            bottom: 0;
+            height: 300px;
+            position: absolute;
+            right: 0;
+            width: 500px;
+            z-index: 1;
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+@media (min-width: 1200px) {
+
 }
