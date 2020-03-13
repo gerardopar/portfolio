@@ -12,6 +12,7 @@ import cryptolio from '../../assets/img/cryptoliov3.png';
 import filmania from '../../assets/img/filmania.png';
 import digiNews from '../../assets/img/diginews.png';
 import pixture from '../../assets/img/pixture-min.png';
+import mayenApparel from '../../assets/img/mayen-apparel.com-min.png';
 
 const projects = props => (
     <div className="projects" id={props.id}>
@@ -114,6 +115,20 @@ const projects = props => (
             </a>
             </p>
         </ProjectL>
+        <ProjectR site="https://mayenapparel.com" img={mayenApparel} title="digiNews">
+            <h2 className="projects__col--title">&mdash; 06 MAYEN APPAREL</h2>
+            <p className="projects__col--text">
+            A Shopify Shop
+            <br />
+            for men & women
+            <br />
+            apparel.
+            <br />
+            <a href="https://mayenapparel.com" target="noopener noreferrer">
+                <img src={web} alt="world icon" className="projects__col--icon" />
+            </a>
+            </p>
+        </ProjectR>
     </div>
 );
 

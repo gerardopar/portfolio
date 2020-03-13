@@ -6,6 +6,7 @@ import ReactDOM from 'react-dom';
 import App from './components/App/App';
 
 // importing style sheet
+// import 'aos/dist/aos.css';
 import './styles/main.scss';
 
 // rendering app
