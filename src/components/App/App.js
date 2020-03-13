@@ -27,41 +27,4 @@ const App = () => (
     </div>
 );
 
-// class App extends React.Component {
-//     constructor(props, context) { 
-//         super(props, context); 
-//         AOS.init();
-//     }
-
-//     componentWillReceiveProps() { 
-//         AOS.refresh(); 
-//     }
-
-//     // componentDidMount() {
-//     //     AOS.init({
-//     //         duration: 2000
-//     //     });
-//     // }
-
-//     render() {
-//         return (
-//             <div>
-//                 <Header />
-//                 <Hero id="home" />
-//                 <Heading text="SKILLS" />
-//                 <div data-aos="zoom-in">
-//                 <Skills id="skills" />
-//                 </div>
-//                 <Heading text="ABOUT ME" />
-//                 <About id="about" />
-//                 <Heading text="PROJECTS" />
-//                 <Projects id="projects" />
-//                 <Heading text="CONTACT" />
-//                 <Contact />
-//                 <Footer />
-//             </div>
-//         );
-//     }
-// }
-
 export default App;
