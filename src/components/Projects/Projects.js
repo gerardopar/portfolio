@@ -28,6 +28,9 @@ const projects = props => (
             <br />
             & MaterialUI 
             <br />
+            <a href="https://calendapp.herokuapp.com/" target="noopener noreferrer">
+                <img src={web} alt="world icon" className="projects__col--icon" />
+            </a>
             <a href="https://github.com/hatchways/team-matcha" target="noopener noreferrer">
                 <img src={github} alt="github icon" className="projects__col--icon" />
             </a>
