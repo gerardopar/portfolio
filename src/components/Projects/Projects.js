@@ -17,7 +17,7 @@ import calendApp from '../../assets/img/calendapp-min.png';
 
 const projects = props => (
     <div className="projects" id={props.id}>
-        <ProjectL site="https://github.com/hatchways/team-matcha" img={calendApp} title="calendApp">
+        <ProjectL site="https://calendapp.herokuapp.com/" img={calendApp} title="calendApp">
             <h2 className="projects__col--title">&mdash; 01 CALENDAPP</h2>
             <p className="projects__col--text">
             An appointment scheduler application 
